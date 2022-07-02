@@ -1,0 +1,23 @@
+<div>
+  <h1>Result</h1>
+</div>
+
+<div>
+  <% word = params[:word].upcase %>
+  <% letters = params[:letters].chars.reject(&:blank?) %>
+
+  <%= letters.each do |letter| %>
+    <%= if letter.include? word%>
+      <p><strong>Congratulations!</strong> <%= word %> is a valid English word!</p>
+    <%= end %>
+  <%= end %>
+</div>
+
+<div>
+  <%= link_to "Play again?", new_path %>
+</div>
+
+<div>
+nOOOOOOOOOOOO
+  <p>Sorry, but <strong><%= word %></strong> can't be built out of <%= params[:letters].upcase %>.</p>
+</div>

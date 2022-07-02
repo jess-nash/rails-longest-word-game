@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ }
+
+ h1 {
+  font-size: 50px;
+ }
+
+ h2 {
+  font-weight: lighter;
+ }
+
+ .flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ #letter-box{
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  border: 1px solid palevioletred;
+  background-color: pink;
+  color: white;
+  box-shadow: 5px 5px 5px pink;
+ }
+
+p {
+  font-size: 20px;
+}
+
+.center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
